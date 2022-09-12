@@ -21,6 +21,11 @@
   font: 500 0.75rem/1.33 "Noto Sans", sans-serif;
   letter-spacing: 2%;
 }
+.font-2-xs-u {
+  font: 500 0.75rem/1.33 "Noto Sans", sans-serif;
+  letter-spacing: 2%;
+  text-transform: uppercase;
+}
 .font-2-s {
   font: 500 1rem/1 "Noto Sans", sans-serif;
 }
