@@ -1,3 +1,4 @@
+/* header */
 .menu-header {
   display: flex;
   flex-wrap: wrap;
@@ -12,6 +13,7 @@
   gap: 60px;
   background-color: var(--cor-1);
   margin-bottom: 80px;
+  position: relative;
 }
 .intro-img {
   display: flex;
@@ -31,22 +33,41 @@
 .intro-texto h1 {
   margin-bottom: 20px;
 }
-
+.intro-container::before {
+  content: "";
+  width: 75px;
+  height: 35px;
+  background-image: url("../img/dec-claro-esquerda.svg");
+  position: absolute;
+  top: 20px;
+  right: 140px;
+}
 /* formação */
 .formacao {
   padding-right: 20px;
+  position: relative;
 }
 .conteudo-formacao {
   display: grid;
   grid-template-columns: 1fr 1fr;
   margin-bottom: 60px;
 }
+.formacao::before {
+  content: "";
+  width: 75px;
+  height: 35px;
+  background-image: url("../img/dec-claro-direita.svg");
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
 .item-formacao {
-  padding: 0px 60px 12px 0;
+  padding: 0px 60px 12px 24px;
 }
 .formacao h2 {
   position: relative;
   text-align: end;
+  padding-right: 60px;
   margin-bottom: 40px;
 }
 .formacao h2::before {
@@ -56,17 +77,37 @@
   height: 12px;
   background-color: var(--cor-p1);
   top: -16px;
-  right: 0px;
+  right: 60px;
 }
 .formacao-instituicao-ano {
   display: flex;
   place-content: space-between;
+  position: relative;
+}
+.formacao-instituicao-ano::before {
+  content: "";
+  width: 16px;
+  height: 8px;
+  background-color: var(--cor-p1);
+  position: absolute;
+  top: 3px;
+  left: -24px;
 }
 
 /* experiência */
 
 .experiencia {
   padding-right: 20px;
+  position: relative;
+}
+.experiencia::before {
+  content: "";
+  width: 75px;
+  height: 35px;
+  background-image: url("../img/dec-claro-esquerda.svg");
+  position: absolute;
+  top: 0px;
+  right: 80px;
 }
 .experiencia h2 {
   position: relative;
@@ -88,22 +129,42 @@
   margin-bottom: 60px;
 }
 .item-experiencia {
-  padding: 0px 60px 12px 0;
+  padding: 0px 60px 12px 24px;
 }
 .experiencia-empresa-ano {
   display: flex;
   place-content: space-between;
+  position: relative;
 }
-
+.experiencia-empresa-ano::before {
+  content: "";
+  width: 16px;
+  height: 8px;
+  background-color: var(--cor-p1);
+  position: absolute;
+  top: 3px;
+  left: -24px;
+}
 /* projetos */
 .projetos {
   background-color: var(--cor-11);
   padding-right: 20px;
   padding-top: 40px;
+  position: relative;
+}
+.projetos::before {
+  content: "";
+  width: 75px;
+  height: 35px;
+  background-image: url("../img/dec-escuro-esquerda.svg");
+  position: absolute;
+  top: 40px;
+  left: 60px;
 }
 .projetos h2 {
   position: relative;
   text-align: end;
+  padding-right: 60px;
   margin-bottom: 40px;
 }
 .projetos h2::before {
@@ -113,7 +174,7 @@
   height: 12px;
   background-color: var(--cor-p1);
   top: -16px;
-  right: 0px;
+  right: 60px;
 }
 
 .lista-projetos {
@@ -129,6 +190,16 @@
   padding-right: 20px;
   padding-top: 40px;
   padding-bottom: 100px;
+  position: relative;
+}
+.contato::before {
+  content: "";
+  width: 75px;
+  height: 35px;
+  background-image: url("../img/dec-escuro-direita.svg");
+  position: absolute;
+  top: 40px;
+  right: 140px;
 }
 .contato h2 {
   position: relative;
@@ -161,6 +232,12 @@
 
 .lista-contato li {
   line-height: 2;
+}
+.lista-contato li span {
+  display: block;
+  width: 32px;
+  height: 4px;
+  background-color: var(--cor-11);
 }
 
 .footer {
