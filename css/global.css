@@ -5,6 +5,7 @@
 }
 body {
   margin-bottom: 200px;
+  color: var(--cor-11);
 }
 img {
   max-width: 100%;
