@@ -1,0 +1,9 @@
+/* header */
+.menu-header {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 80px;
+  flex-direction: row;
+  justify-content: end;
+  padding: 20px 80px 20px 0px;
+}

@@ -1,48 +1,47 @@
-/* formação */
-.formacao {
+/* experiência */
+
+.experiencia {
   /* padding-right: 20px; */
   position: relative;
   margin-bottom: 60px;
 }
-.formacao::before {
+.experiencia::before {
   content: "";
   width: 75px;
   height: 35px;
-  background-image: url("../img/dec-claro-direita.svg");
+  background-image: url("../img/dec-claro-esquerda.svg");
   position: absolute;
   top: 0px;
-  left: 0px;
+  right: 0px;
 }
-.formacao h2 {
+.experiencia h2 {
   position: relative;
-  text-align: end;
-  /* padding-right: 60px; */
+  text-align: start;
   margin-bottom: 40px;
 }
-.formacao h2::before {
+.experiencia h2::before {
   content: "";
   position: absolute;
   width: 100px;
   height: 12px;
   background-color: var(--cor-p1);
   top: -16px;
-  right: 0px;
+  left: 0px;
 }
-.conteudo-formacao {
+.conteudo-experiencia {
   display: grid;
   grid-template-columns: 1fr 1fr;
   column-gap: 80px;
 }
-
-.item-formacao {
-  padding: 0px 0px 12px 24px;
+.item-experiencia {
+  padding: 0px 00px 12px 24px;
 }
-.formacao-instituicao-ano {
+.experiencia-empresa-ano {
   display: flex;
   place-content: space-between;
   position: relative;
 }
-.formacao-instituicao-ano::before {
+.experiencia-empresa-ano::before {
   content: "";
   width: 16px;
   height: 8px;

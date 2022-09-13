@@ -1,0 +1,30 @@
+.intro {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  background-color: var(--cor-1);
+  margin-bottom: 80px;
+  position: relative;
+}
+.intro-img {
+  display: flex;
+  align-items: center;
+  background-color: var(--cor-p1);
+}
+
+.intro-texto {
+  padding-top: 140px;
+  padding-right: 80px;
+}
+.intro-texto h1 {
+  margin-bottom: 20px;
+}
+.intro::before {
+  content: "";
+  width: 75px;
+  height: 35px;
+  background-image: url("../img/dec-claro-esquerda.svg");
+  position: absolute;
+  top: 40px;
+  right: 80px;
+}

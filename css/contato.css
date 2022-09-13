@@ -1,0 +1,55 @@
+/* contato */
+.contato {
+  background-color: var(--cor-12);
+  /* padding-right: 20px; */
+  padding-top: 40px;
+  padding-bottom: 100px;
+  position: relative;
+}
+.contato h2::after {
+  content: "";
+  width: 75px;
+  height: 35px;
+  background-image: url("../img/dec-escuro-direita.svg");
+  position: absolute;
+  top: 0px;
+  right: 0px;
+}
+.contato h2 {
+  position: relative;
+  text-align: start;
+  margin-bottom: 40px;
+}
+.contato h2::before {
+  content: "";
+  position: absolute;
+  width: 90px;
+  height: 12px;
+  background-color: var(--cor-p1);
+  top: -16px;
+  left: 0px;
+}
+
+.conteudo-contato {
+  display: flex;
+  place-content: space-between;
+  gap: 20px;
+  align-items: center;
+}
+.conteudo-contato img {
+  padding: 0px 0px 0px 80px;
+}
+.conteudo-contato p {
+  max-width: 32ch;
+}
+
+.lista-contato li {
+  line-height: 1.4;
+  padding-bottom: 16px;
+}
+.lista-contato li span {
+  display: block;
+  width: 32px;
+  height: 4px;
+  background-color: var(--cor-11);
+}
