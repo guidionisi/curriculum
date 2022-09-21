@@ -3,7 +3,10 @@
 .experiencia {
   /* padding-right: 20px; */
   position: relative;
-  margin-bottom: 60px;
+  padding-top: 0px;
+  padding-bottom: 60px;
+  padding-left: 40px;
+  padding-right: 40px;
 }
 .experiencia::before {
   content: "";
@@ -12,7 +15,7 @@
   background-image: url("../img/dec-claro-esquerda.svg");
   position: absolute;
   top: 0px;
-  right: 0px;
+  right: 40px;
 }
 .experiencia h2 {
   position: relative;
@@ -49,4 +52,26 @@
   position: absolute;
   top: 5px;
   left: -24px;
+}
+
+@media (max-width: 800px) {
+  .conteudo-experiencia {
+    grid-template-columns: 1fr;
+  }
+  .experiencia h2 {
+    font-size: 2rem;
+  }
+  .experiencia h2::before {
+    width: 80px;
+    height: 8px;
+  }
+}
+
+@media (max-width: 400px) {
+  .experiencia-empresa-ano {
+    font-size: 1.125rem;
+  }
+  .experiencia-cargo {
+    font-size: 0.75rem;
+  }
 }

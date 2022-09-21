@@ -1,9 +1,31 @@
 /* header */
+header {
+  height: 40px;
+}
 .menu-header {
   display: flex;
   flex-wrap: wrap;
-  gap: 80px;
-  flex-direction: row;
+  gap: 20px;
   justify-content: end;
-  padding: 20px 80px 20px 0px;
+  padding-right: 0px;
+  padding-left: 0px;
+  background-color: var(--cor-0);
+}
+.menu-header li {
+  padding: 8px 16px;
+}
+.menu-header li:hover {
+  background-color: var(--cor-2);
+  border-radius: 5px;
+}
+@media (max-width: 1000px) {
+  .menu-header li {
+    padding: 8px 12px;
+    background-color: var(--cor-1);
+  }
+}
+@media (max-width: 600px) {
+  .menu-header {
+    justify-content: center;
+  }
 }

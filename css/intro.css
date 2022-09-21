@@ -2,7 +2,6 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 80px;
-  background-color: var(--cor-1);
   margin-bottom: 80px;
   position: relative;
 }
@@ -11,7 +10,11 @@
   align-items: center;
   background-color: var(--cor-p1);
 }
-
+.intro-img img {
+  width: 660px;
+  height: 185px;
+  object-fit: cover;
+}
 .intro-texto {
   padding-top: 140px;
   padding-right: 80px;
@@ -27,4 +30,72 @@
   position: absolute;
   top: 40px;
   right: 80px;
+}
+@media (max-width: 1000px) {
+  .intro {
+    gap: 40px;
+  }
+  .intro-texto {
+    padding-top: 80px;
+    padding-right: 40px;
+  }
+  .intro::before {
+    right: 40px;
+  }
+  .intro-texto h1 {
+    font-size: 1.75rem;
+    line-height: 1.2;
+  }
+  .intro-texto span {
+    font-size: 1.75rem;
+    line-height: 1.2;
+  }
+  .intro-texto p {
+    font-size: 1.5;
+  }
+}
+@media (max-width: 800px) {
+  .intro-texto {
+    padding-top: 20px;
+    padding-right: 20px;
+  }
+  .intro::before {
+    display: none;
+  }
+  .intro-texto h1 {
+    font-size: 1.5rem;
+    line-height: 1.1;
+  }
+  .intro-texto span {
+    font-size: 1.5rem;
+    line-height: 1.1;
+  }
+  .intro-texto p {
+    font-size: 1.2rem;
+  }
+}
+@media (max-width: 600px) {
+  .intro {
+    grid-template-columns: 1fr;
+  }
+  .intro-img {
+    display: none;
+  }
+  .intro-texto {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+  .intro-texto p {
+    font-size: 1rem;
+    line-height: 1;
+  }
+}
+
+@media (max-width: 400px) {
+  .intro-texto h1 {
+    font-size: 1.25rem;
+  }
+  .intro-texto p {
+    font-size: 0.875rem;
+  }
 }

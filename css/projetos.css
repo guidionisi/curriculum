@@ -1,23 +1,15 @@
 /* projetos */
 .projetos {
   background-color: var(--cor-11);
-  /* padding-right: 20px; */
   padding-top: 40px;
+  /* padding-right: 40px; */
   position: relative;
-}
-.projetos h2::after {
-  content: "";
-  width: 75px;
-  height: 35px;
-  background-image: url("../img/dec-escuro-esquerda.svg");
-  position: absolute;
-  top: 0px;
-  left: 0px;
 }
 .projetos h2 {
   position: relative;
   text-align: end;
   margin-bottom: 40px;
+  padding-right: 80px;
 }
 .projetos h2::before {
   content: "";
@@ -26,11 +18,42 @@
   height: 12px;
   background-color: var(--cor-p1);
   top: -16px;
-  right: 0px;
+  right: 80px;
+}
+.projetos h2::after {
+  content: "";
+  width: 75px;
+  height: 35px;
+  background-image: url("../img/dec-escuro-esquerda.svg");
+  position: absolute;
+  top: 0px;
+  left: 80px;
 }
 .lista-projetos {
   display: flex;
   gap: 60px;
   justify-content: center;
   padding-bottom: 80px;
+  overflow-x: auto;
+}
+
+@media (max-width: 1000px) {
+  .projetos h2 {
+    padding-right: 40px;
+  }
+  .projetos h2::before {
+    right: 40px;
+  }
+}
+@media (max-width: 800px) {
+  .projetos h2 {
+    font-size: 2rem;
+  }
+  .projetos h2::before {
+    width: 108px;
+    height: 8px;
+  }
+  .projetos h2::after {
+    display: none;
+  }
 }

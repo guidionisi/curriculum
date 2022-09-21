@@ -1,10 +1,11 @@
 /* contato */
 .contato {
   background-color: var(--cor-12);
-  /* padding-right: 20px; */
   padding-top: 40px;
   padding-bottom: 100px;
   position: relative;
+  padding-left: 40px;
+  padding-right: 40px;
 }
 .contato h2::after {
   content: "";
@@ -19,6 +20,7 @@
   position: relative;
   text-align: start;
   margin-bottom: 40px;
+  padding-left: 80px;
 }
 .contato h2::before {
   content: "";
@@ -27,7 +29,7 @@
   height: 12px;
   background-color: var(--cor-p1);
   top: -16px;
-  left: 0px;
+  left: 80px;
 }
 
 .conteudo-contato {
@@ -35,6 +37,7 @@
   place-content: space-between;
   gap: 20px;
   align-items: center;
+  max-width: 1100px;
 }
 .conteudo-contato img {
   padding: 0px 0px 0px 80px;
@@ -52,4 +55,52 @@
   width: 32px;
   height: 4px;
   background-color: var(--cor-11);
+}
+.lista-contato li:hover {
+  color: var(--cor-2);
+}
+
+@media (max-width: 800px) {
+  .conteudo-contato p {
+    font-size: 1.125rem;
+  }
+  .contato h2 {
+    font-size: 2rem;
+    padding-left: 0px;
+  }
+  .contato h2::before {
+    width: 60px;
+    height: 8px;
+    left: 0px;
+  }
+  .conteudo-contato img {
+    display: none;
+  }
+}
+
+@media (max-width: 800px) {
+  .lista-contato {
+    padding: 0px;
+  }
+  .contato h2::after {
+    display: none;
+  }
+}
+
+@media (max-width: 600px) {
+  .conteudo-contato {
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
+  .conteudo-contato p {
+    max-width: none;
+  }
+  .lista-contato {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .lista-contato li {
+    padding: 8px 16px;
+  }
 }

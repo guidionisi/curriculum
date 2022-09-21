@@ -1,8 +1,8 @@
 /* formação */
 .formacao {
-  /* padding-right: 20px; */
   position: relative;
   margin-bottom: 60px;
+  padding: 0 40px;
 }
 .formacao::before {
   content: "";
@@ -11,12 +11,11 @@
   background-image: url("../img/dec-claro-direita.svg");
   position: absolute;
   top: 0px;
-  left: 0px;
+  left: 40px;
 }
 .formacao h2 {
   position: relative;
   text-align: end;
-  /* padding-right: 60px; */
   margin-bottom: 40px;
 }
 .formacao h2::before {
@@ -50,4 +49,26 @@
   position: absolute;
   top: 5px;
   left: -24px;
+}
+
+@media (max-width: 800px) {
+  .conteudo-formacao {
+    grid-template-columns: 1fr;
+  }
+  .formacao h2 {
+    font-size: 2rem;
+  }
+  .formacao h2::before {
+    width: 80px;
+    height: 8px;
+  }
+}
+
+@media (max-width: 400px) {
+  .formacao-instituicao-ano {
+    font-size: 1.125rem;
+  }
+  .formacao-curso {
+    font-size: 0.75rem;
+  }
 }

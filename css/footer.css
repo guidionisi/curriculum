@@ -20,5 +20,21 @@
 }
 .footer-logo {
   justify-self: start;
-  /* padding-left: 220px; */
+  padding-left: 40px;
+}
+
+@media (max-width: 800px) {
+  .footer {
+    padding-top: 24px;
+    padding-bottom: 24px;
+  }
+  .footer-conteudo {
+    grid-template-columns: 1fr;
+  }
+  .footer-logo {
+    display: none;
+  }
+  .footer span {
+    font-size: 0.85rem;
+  }
 }
