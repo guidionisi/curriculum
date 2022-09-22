@@ -1,31 +1,53 @@
-/* header */
+/* HEADER CSS */
+
 header {
-  height: 40px;
+  margin: 8px 0px;
+  padding: 0px;
 }
 .menu-header {
   display: flex;
   flex-wrap: wrap;
-  gap: 20px;
+  gap: 24px;
   justify-content: end;
-  padding-right: 0px;
-  padding-left: 0px;
   background-color: var(--cor-0);
 }
 .menu-header li {
   padding: 8px 16px;
+  border-radius: 4px;
 }
 .menu-header li:hover {
   background-color: var(--cor-2);
-  border-radius: 5px;
+  border-radius: 4px;
 }
-@media (max-width: 1000px) {
+
+/*RESPONSIVO 960px*/
+@media (max-width: 960px) {
+  .menu-header {
+    gap: 16px;
+  }
+}
+/*RESPONSIVO 800px*/
+@media (max-width: 800px) {
+  header {
+    margin: 12px 0px;
+  }
+  .menu-header {
+    place-content: space-evenly;
+  }
   .menu-header li {
+    font-size: 90%;
     padding: 8px 12px;
     background-color: var(--cor-1);
   }
 }
-@media (max-width: 600px) {
+
+/*RESPONSIVO 420px*/
+@media (max-width: 420px) {
   .menu-header {
-    justify-content: center;
+    gap: 8px;
+  }
+  .menu-header li {
+    font-size: 80%;
+    padding: 4px 8px;
   }
 }
