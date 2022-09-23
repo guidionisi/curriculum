@@ -1,4 +1,4 @@
-/* formação */
+/* SEÇÃO FORMAÇÃO CSS */
 .formacao {
   position: relative;
   margin-bottom: 80px;
@@ -33,7 +33,6 @@
   column-gap: 80px;
   padding: 0px 20px;
 }
-
 .item-formacao {
   padding: 0px 0px 12px 24px;
 }
@@ -66,9 +65,11 @@
     font-size: 2.125rem;
   }
 }
-
 /* RESPONSIVO TELAS MÉDIAS */
 @media (max-width: 800px) {
+  .formacao {
+    margin-bottom: 40px;
+  }
   .conteudo-formacao {
     grid-template-columns: 1fr;
   }
@@ -83,13 +84,12 @@
     display: none;
   }
 }
-
 /* RESPONSIVO TELAS PEQUENAS */
 @media (max-width: 400px) {
-  .formacao-instituicao-ano span {
-    /* font-size: 2.125rem; */
-  }
   .formacao-curso span {
     font-size: 1.125rem;
+  }
+  .formacao::before {
+    display: none;
   }
 }

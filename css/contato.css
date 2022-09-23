@@ -1,11 +1,10 @@
-/* contato */
+/* SEÇÃO CONTATO CSS */
+
 .contato {
   background-color: var(--cor-12);
-  padding-top: 40px;
-  padding-bottom: 100px;
+  padding-top: 60px;
+  padding-bottom: 60px;
   position: relative;
-  padding-left: 40px;
-  padding-right: 40px;
 }
 .contato h2::after {
   content: "";
@@ -14,13 +13,13 @@
   background-image: url("../img/dec-escuro-direita.svg");
   position: absolute;
   top: 0px;
-  right: 0px;
+  right: 20px;
 }
 .contato h2 {
   position: relative;
   text-align: start;
   margin-bottom: 40px;
-  padding-left: 80px;
+  padding-left: 20px;
 }
 .contato h2::before {
   content: "";
@@ -29,78 +28,85 @@
   height: 12px;
   background-color: var(--cor-p1);
   top: -16px;
-  left: 80px;
+  left: 20px;
 }
-
 .conteudo-contato {
   display: flex;
   place-content: space-between;
   gap: 20px;
   align-items: center;
-  max-width: 1100px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 .conteudo-contato img {
-  padding: 0px 0px 0px 80px;
+  max-width: 200px;
 }
 .conteudo-contato p {
   max-width: 32ch;
 }
-
 .lista-contato li {
   line-height: 1.4;
   padding-bottom: 16px;
 }
 .lista-contato li span {
-  display: block;
-  width: 32px;
-  height: 4px;
-  background-color: var(--cor-11);
+  display: inline-block;
+  width: 4px;
+  height: 20px;
+  background-color: var(--cor-p1);
+  margin-right: 4px;
 }
 .lista-contato li:hover {
   color: var(--cor-2);
 }
 
-@media (max-width: 800px) {
-  .conteudo-contato p {
-    font-size: 1.125rem;
+/* RESPONSIVO TELAS GRANDES */
+@media (max-width: 1000px) {
+  .contato h2 {
+    font-size: 2.125rem;
+  }
+}
+/* RESPONSIVO TELAS MÉDIAS */
+@media (max-width: 820px) {
+  .contato {
+    padding-bottom: 40px;
   }
   .contato h2 {
-    font-size: 2rem;
-    padding-left: 0px;
+    text-align: end;
+    padding-right: 20px;
   }
   .contato h2::before {
-    width: 60px;
+    width: 80px;
     height: 8px;
-    left: 0px;
+    left: initial;
+    right: 20px;
+  }
+  .contato h2::after {
+    background-image: url("../img/dec-escuro-esquerda.svg");
+    top: 0px;
+    left: 20px;
+  }
+  .conteudo-contato {
+    place-content: space-evenly;
   }
   .conteudo-contato img {
     display: none;
   }
 }
-
-@media (max-width: 800px) {
-  .lista-contato {
-    padding: 0px;
+@media (max-width: 640px) {
+  .contato {
+    padding-bottom: 20px;
   }
-  .contato h2::after {
-    display: none;
-  }
-}
-
-@media (max-width: 600px) {
   .conteudo-contato {
     flex-direction: column;
-    justify-content: flex-start;
   }
-
+  .conteudo-contato ul {
+    display: inline-flex;
+    gap: 32px;
+  }
+}
+/* RESPONSIVO TELAS PEQUENAS */
+@media (max-width: 500px) {
   .conteudo-contato p {
-    max-width: none;
-  }
-  .lista-contato {
-    display: flex;
-    flex-wrap: wrap;
-  }
-  .lista-contato li {
-    padding: 8px 16px;
+    font-size: 1.25rem;
   }
 }

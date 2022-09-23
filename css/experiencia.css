@@ -1,12 +1,8 @@
-/* experiência */
+/* SEÇÃO EXPERIÊNCIA CSS */
 
 .experiencia {
-  /* padding-right: 20px; */
   position: relative;
-  padding-top: 0px;
-  padding-bottom: 60px;
-  padding-left: 40px;
-  padding-right: 40px;
+  padding-bottom: 60px !important;
 }
 .experiencia::before {
   content: "";
@@ -15,11 +11,12 @@
   background-image: url("../img/dec-claro-esquerda.svg");
   position: absolute;
   top: 0px;
-  right: 40px;
+  right: 20px;
 }
 .experiencia h2 {
   position: relative;
   text-align: start;
+  padding-left: 20px;
   margin-bottom: 40px;
 }
 .experiencia h2::before {
@@ -29,15 +26,16 @@
   height: 12px;
   background-color: var(--cor-p1);
   top: -16px;
-  left: 0px;
+  left: 20px;
 }
 .conteudo-experiencia {
   display: grid;
   grid-template-columns: 1fr 1fr;
   column-gap: 80px;
+  padding: 0px 20px;
 }
 .item-experiencia {
-  padding: 0px 00px 12px 24px;
+  padding: 0px 0px 12px 24px;
 }
 .experiencia-empresa-ano {
   display: flex;
@@ -54,24 +52,58 @@
   left: -24px;
 }
 
-@media (max-width: 800px) {
+/* RESPONSIVO TELAS GRANDES */
+@media (max-width: 1100px) {
+  .conteudo-experiencia {
+    column-gap: 60px;
+  }
+  .experiencia-empresa-ano {
+    flex-direction: column;
+  }
+}
+@media (max-width: 1000px) {
   .conteudo-experiencia {
     grid-template-columns: 1fr;
   }
+  .conteudo-experiencia {
+    column-gap: 40px;
+  }
+  .experiencia h2 {
+    font-size: 2.125rem;
+  }
+  .sem-linha {
+    display: none;
+  }
+}
+
+/* RESPONSIVO TELAS MÉDIAS */
+@media (max-width: 800px) {
+  .experiencia {
+    padding-bottom: 24px !important;
+  }
+  .experiencia::before {
+    left: 20px;
+    background-image: url("../img/dec-claro-direita.svg");
+  }
   .experiencia h2 {
     font-size: 2rem;
+    text-align: end;
+    padding-right: 20px;
   }
   .experiencia h2::before {
     width: 80px;
     height: 8px;
+    left: initial;
+    right: 20px;
   }
 }
 
+/* RESPONSIVO TELAS PEQUENAS */
 @media (max-width: 400px) {
-  .experiencia-empresa-ano {
+  .experiencia-cargo span {
     font-size: 1.125rem;
   }
-  .experiencia-cargo {
-    font-size: 0.75rem;
+  .experiencia::before {
+    display: none;
   }
 }

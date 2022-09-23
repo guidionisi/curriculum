@@ -1,38 +1,18 @@
+/* SEÇÃO FOOTER CSS */
+
 .footer {
-  padding-top: 50px;
-  padding-bottom: 50px;
+  padding-top: 40px;
+  padding-bottom: 40px;
   background-color: var(--cor-12);
   position: relative;
-}
-.footer::before {
-  content: "";
-  width: 100%;
-  height: 2px;
-  background-color: var(--cor-11);
-  position: absolute;
-  top: 0px;
-  left: 0px;
-}
-.footer-conteudo {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  justify-items: center;
-}
-.footer-logo {
-  justify-self: start;
-  padding-left: 40px;
+  border-top: var(--cor-11) 1px solid;
+  text-align: center;
 }
 
 @media (max-width: 800px) {
   .footer {
     padding-top: 24px;
     padding-bottom: 24px;
-  }
-  .footer-conteudo {
-    grid-template-columns: 1fr;
-  }
-  .footer-logo {
-    display: none;
   }
   .footer span {
     font-size: 0.85rem;

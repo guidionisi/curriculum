@@ -1,4 +1,4 @@
-/* HEADER CSS */
+/* SEÇÃO HEADER CSS */
 
 header {
   margin: 8px 0px;
@@ -20,13 +20,13 @@ header {
   border-radius: 4px;
 }
 
-/*RESPONSIVO 960px*/
+/*RESPONSIVO TELAS GRANDES*/
 @media (max-width: 960px) {
   .menu-header {
     gap: 16px;
   }
 }
-/*RESPONSIVO 800px*/
+/*RESPONSIVO TELAS MÉDIAS*/
 @media (max-width: 800px) {
   header {
     margin: 12px 0px;
@@ -40,8 +40,7 @@ header {
     background-color: var(--cor-1);
   }
 }
-
-/*RESPONSIVO 420px*/
+/*RESPONSIVO TELAS PEQUENAS*/
 @media (max-width: 420px) {
   .menu-header {
     gap: 8px;

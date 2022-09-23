@@ -1,3 +1,5 @@
+/* SEÇÃO INTRODUÇÃO CSS */
+
 .intro {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -64,6 +66,9 @@
 }
 /* RESPONSIVO TELAS MÉDIAS */
 @media (max-width: 800px) {
+  .intro {
+    margin-bottom: 60px;
+  }
   .intro-texto {
     padding-top: 20px;
     padding-right: 20px;
