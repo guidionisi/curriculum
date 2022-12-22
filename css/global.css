@@ -1,12 +1,9 @@
 /* AJUSTES GLOBAIS */
 
-html {
+body {
+  color: var(--cor-11); /*cor padrão da fonte*/
   margin: 0px;
   padding: 0px;
-}
-
-body {
-  color: var(--cor-11);
 }
 
 main {
